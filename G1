@@ -14,6 +14,8 @@ int main() // Iniciando o programa
   char operacao;
   float num1, num2, raiz;
 
+  //Iniciando a calculadora
+  //Neste momento é informado ao usuário a forma de utilização da calculadora
   do {
 
     printf(
@@ -27,7 +29,7 @@ int main() // Iniciando o programa
     printf(" - Para encontrar a raíz quadrada de um número, digite 'r'\n");
     printf(" - Para encerrar a calculadora, digite '0'\n");
 
-    scanf("%c", &operacao);
+    scanf("%c", &operacao); //Leitura da opção escolhida pelo usuário
     
     switch (operacao) // De acordo com a operação escolhida, o programa
                       // escolherá um dos casos e iniciará novas instruções
@@ -98,5 +100,5 @@ int main() // Iniciando o programa
         printf("\nEncerrando calculadora.");
       }
     }
-  } while (operacao != '0');
+  } while (operacao != '0'); //O programa encerra no momento em que o usuário escolher o 0 como opção
 }
